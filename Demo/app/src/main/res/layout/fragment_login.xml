@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/id_login_rl_perm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/id_login_form_perm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_login_perm" />
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/id_login_form_perm"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="#d9d6d6"
+            android:textSize="19dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/login_user"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_login_rl_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/id_login_form_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_login_lock" />
+
+        <EditText
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_login_form_lock"
+            android:background="@null"
+            android:hint="请输入登录密码"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#d9d6d6"
+            android:textSize="19dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/id_login_form_lock"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_login_rl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/fl_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:text="登    录"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fl_rl_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/fl_tv_blocktip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有帐号?"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/fl_tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fl_tv_blocktip"
+            android:clickable="true"
+            android:text=" 立即注册 "
+            android:textColor="#ca0a0a"
+            android:textSize="17sp" />
+
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="93dp"
+            android:layout_below="@id/fl_tv_register"
+            android:background="@drawable/redline" />
+
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/id_login_ll_tip"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="还没有帐号?"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="17sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/fl_tv_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:text=" 立即注册 "-->
+            <!--android:textColor="#ca0a0a"-->
+            <!--android:textSize="17sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_below="@id/fl_tv_register"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/line" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+</LinearLayout>
+
